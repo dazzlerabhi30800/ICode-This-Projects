@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f86c96, #fa83f0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+button {
+    border: none;
+    outline: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: clamp(400px, 95%, 1350px);
+}
+
+nav {
+    display: flex;
+    padding: 1.5rem;
+    background: linear-gradient(to right, rgb(249, 220, 124), #f26db6);
+    box-shadow: 1px 1px 15px 3px #00000035;
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 15px);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: rgb(83, 83, 83);
+    transition: 0.3s linear;
+}
+
+
+
+nav a:hover {
+    background: #00000032;
+    color: #fff;
+}
+
+nav a.active {
+    background: #00000032;
+    color: #fff;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    box-shadow: 1px 1px 10px 3px #00000032;
+}
+
+
+.testimonials--wrapper {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+h1 {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid #dad5d5;
+    padding: 1rem;
+    box-shadow: none;
+    transition: 0.3s linear;
+}
+
+.testimonial:hover {
+    border-color: transparent;
+    box-shadow: 1px 1px 15px 3px #00000046;
+}
+
+.rating--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star {
+    color: #b5b4b4;
+    font-size: 1.3rem;
+}
+
+.highlight {
+    color: #f3c738;
+    font-size: 1.3rem;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+
+
+.btn {
+    background: none;
+    color: #9c09f7;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: end;
+}
+
+
+.more--btn {
+    margin: 1rem auto;
+    color: #a843f5;
+    font-weight: 500;
+    background: none;
+    font-size: 1rem;
+}
+
+
+@media (hover: hover) {
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: red;
+    }
+
+    .testimonial {
+        cursor: pointer;
+    }
+}
+
+
+@media Screen and (min-width: 700px) {
+    .testimonials--wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+@media Screen and (min-width: 1000px) {
+    .testimonials--wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+    }
+}

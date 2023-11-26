@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Retro Settings</title>
+  </head>
+  <body>
+    <main>
+      <!-- Display and Brightness Section -->
+      <section class="display">
+        <div class="brightness___container">
+          <h1>Display & Brightness</h1>
+          <div class="brightness__wrapper">
+            <div class="brightness">
+              <p class="mode--name">Brightness</p>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="20"
+                id="brightness-range"
+              />
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Auto Brightness</p>
+              <div class="toggler"></div>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Text Style</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Bold Text</p>
+              <div class="toggler"></div>
+            </div>
+          </div>
+        </div>
+        <div class="brightness___container">
+          <h1>Sound and Tones</h1>
+          <div class="brightness__wrapper">
+            <div class="brightness">
+              <p class="mode--name">Ringtone</p>
+              <i class="fas chevron-right"></i>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Volume</p>
+              <i class="fas chevron-right"></i>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Vibrate on Touch</p>
+              <div class="toggler"></div>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Vibrate When Rings</p>
+              <div class="toggler"></div>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Screen Lock Settings</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="brightness">
+              <p class="mode--name">Dial Pad Tone</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="button--wrapper">
+          <button>Save</button>
+          <button>Reset</button>
+        </div>
+      </section>
+
+      <!-- Settings Section -->
+      <section class="settings">
+        <h2>Settings</h2>
+        <div class="modes__wrapper">
+          <!-- <div class="mode">
+            <p class="mode--name">Airplane mode</p>
+            <div class="toggler"></div>
+          </div> -->
+        </div>
+        <div class="settings__wrapper">
+          <div class="setting">
+            <p>Software Update</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

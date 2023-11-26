@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-Satisfy: "Satisfy", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-image: url('https://i.ibb.co/dJ521Zn/books.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(250, 79, 193, 0.91), rgba(248, 96, 82, 0.841), rgba(247, 18, 71, 0.85), transparent);
+    width: 100%;
+    height: 100%;
+}
+
+main * {
+    position: relative;
+    z-index: 444;
+    font-family: var(--font-Poppins);
+}
+
+h1 {
+    font-family: var(--font-Satisfy);
+    font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+}
+
+
+.social__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social__icons i {
+    font-size: 1.5rem;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+section {
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+button {
+    border: none;
+    width: fit-content;
+    padding: 10px 2rem;
+    border-radius: 30px;
+    color: #f22069;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+button,
+button:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 700px) {
+    body {
+        background: linear-gradient(45deg, #f5b4f5, #f6b9ac);
+    }
+
+    main {
+        background-size: 150%;
+        width: clamp(700px, 90%, 1000px);
+        height: 620px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 15px 3px #00000051;
+        overflow: hidden;
+    }
+
+
+    section {
+        justify-content: start;
+        height: auto;
+    }
+
+
+
+    main:hover {
+        background-size: 135%;
+    }
+}
+
+
+@media (hover:hover) {
+    .social__icons i {
+        cursor: pointer;
+    }
+
+    button {
+        cursor: pointer;
+        transition: 0.3s linear;
+    }
+
+    button:hover {
+        filter: brightness(120%);
+    }
+
+    .social__icons i:hover {
+        transform: scale(1.2);
+    }
+}

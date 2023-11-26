@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --black-color: #253239;
+    --info-background-1: linear-gradient(to right, #fa5cda, #f30f9c 90%);
+
+    --info-background-2: linear-gradient(to right, #ef468f, #ec1f8d);
+    --info-background-3: linear-gradient(to right, #a978e1, #975dfa);
+    --card-background: #344750;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--black-color);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
+    position: relative;
+    width: clamp(300px, 100%, 1200px);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.3);
+    height: 600px;
+    position: relative;
+    background-color: var(--card-background);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.one {
+    background: var(--info-background-1);
+}
+
+.two {
+    background: var(--info-background-2);
+}
+
+.three {
+    background: var(--info-background-3);
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp(1.3rem, 1.8vw, 1.45rem);
+    margin: 3px 0;
+}
+
+p {
+    margin: 20px auto;
+    font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+
+.skip-btn {
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 1.3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+.navigation {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.dot {
+    --dimensions: 11px;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    border-radius: 50%;
+    background: #243137;
+}
+
+.card:nth-child(1) .dot.active {
+    background: #cb14a7;
+}
+
+.card:nth-child(2) .dot.active {
+    background: #a90b0b;
+}
+
+.card:nth-child(3) .dot.active {
+    background: rgb(160, 61, 241);
+}
+
+.wave {
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: translateY(2px);
+    width: 100%;
+}
+
+.wave-two {
+    transform: translateY(-13px);
+}
+
+.wave-two path {
+    fill: #344750d2;
+}
+
+@media (hover:hover) {
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        filter: brightness(120%);
+    }
+}
+
+
+@media Screen and (min-width: 750px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        position: absolute;
+        width: min(35%, 330px);
+    }
+
+    .card:nth-child(2) {
+        z-index: 44;
+    }
+
+    .card:nth-child(1) {
+        transform: translate(-250px, -50px);
+    }
+
+    .card:nth-child(3) {
+        transform: translate(250px, -30px);
+    }
+}

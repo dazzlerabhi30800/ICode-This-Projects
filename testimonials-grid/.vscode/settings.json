@@ -1,0 +1,6 @@
+{
+    "editor.cursorSmoothCaretAnimation": "off",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true
+}
