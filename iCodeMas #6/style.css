@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #212121;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 3rem;
+    justify-content: center;
+    background: #fff;
+}
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.img--container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1px;
+    background: #ebfafa;
+    padding: 8px 0 0;
+}
+
+
+/* Badges */
+.badge {
+    position: absolute;
+    padding: 4px;
+    font-size: 10px;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.discount {
+    background: #f35e28;
+}
+
+.new {
+    background: #1777f3;
+    text-transform: uppercase;
+}
+
+.product--img {
+    --dimensions: 80px;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    margin: 15px auto;
+    object-fit: contain;
+}
+
+
+.add--cart--btn {
+    --button_background: var(--button-background, #106fdb);
+    border: none;
+    --button_text_color: var(--button-text-color, #fff);
+    outline: none;
+    padding: 8px;
+    font-size: 0.9rem;
+    background: var(--button_background);
+    color: var(--button_text_color);
+}
+
+.add--cart--btn * {
+    color: var(--button_text_color);
+    margin-left: 5px;
+}
+
+.item:nth-child(3) {
+    --button-background: #8bc4f2;
+    --button-text-color: #000;
+}
+
+
+.product--info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    font-size: clamp(0.7rem, 1vw + 2px, 0.9rem);
+    font-weight: 500;
+}
+
+.price {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: clamp(0.8rem, 1vw + 2px, 1rem);
+    font-weight: 700;
+}
+
+.actual--price {
+    font-size: 0.75rem;
+    color: #999797;
+    text-decoration: line-through;
+}
+
+
+@media (hover: hover) {
+    .add--cart--btn {
+        cursor: pointer;
+        transition: 0.3s linear;
+    }
+
+    .add--cart--btn:not(.item:nth-child(3) .add--cart--btn):hover {
+        --button-background: #1c51f1;
+    }
+}
+
+
+@media Screen and (min-width: 750px) {
+    main {
+        width: 70%;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+
+    .item {
+        flex-basis: 20%;
+    }
+}

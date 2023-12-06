@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1.5rem;
+}
+
+.item {
+  background: rgb(46, 46, 46);
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+
+/* .draggable-source--is-dragging {
+  transform: scale(1.1);
+} */
+
+.item:hover {
+  background: rgb(25, 30, 42);
+}
+
+@media (hover: hover) {
+  .item {
+    cursor: pointer;
+  }
+}
