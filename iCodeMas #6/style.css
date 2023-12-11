@@ -23,10 +23,9 @@ main {
 .item {
     display: flex;
     flex-direction: column;
+    height: 220px;
     justify-content: space-between;
     flex-basis: 100%;
-    flex-grow: 1;
-    gap: 5px;
 }
 
 .img--container {

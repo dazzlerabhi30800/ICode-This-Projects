@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-Inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Inter);
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(244, 167, 112), rgb(248, 119, 248));
+}
+
+
+main {
+    width: clamp(300px, 80%, 650px);
+    background: #fff;
+    box-shadow: 1px 1px 15px 6px #0000004a;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    color: #000;
+    padding: 1.5rem;
+    position: relative;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1 {
+    font-size: clamp(1.6rem, 2vw + 2px, 2.4rem);
+}
+
+p {
+
+    font-size: clamp(0.9rem, 1vw + 2px, 1.05rem);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.counter--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.counter--wrapper * {
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+
+#price-input {
+    min-width: 50px;
+    max-width: 80px;
+    text-align: center;
+    border: 1px solid #f4b0ec;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+#price-input:focus {
+    outline: none;
+}
+
+.remove-btn {
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+
+
+.price-choose-wrapper {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.price {
+    padding: 1rem 3rem;
+    border: 1px solid #ccc;
+}
+
+.active {
+    border-color: #000;
+}
+
+
+.cart-btn {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 30px;
+    color: #000000;
+    font-weight: 500;
+    background: linear-gradient(to left, #f285e7, #7ad5f3);
+}
+
+#gift-img {
+    position: absolute;
+    left: -45px;
+    top: -55px;
+    width: 135px;
+    height: 135px;
+    filter: drop-shadow(5px 5px 10px #00000033);
+    transform: rotate(-25deg);
+}
+
+@media (hover:hover) {
+    button {
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+
+    .remove-btn:hover {
+        color: #f35757;
+    }
+
+    .btn:hover {
+        color: #f27b5e;
+    }
+
+    .price {
+        cursor: pointer;
+        transition: 0.3s linear;
+    }
+
+    .price:hover {
+        border-color: #000;
+    }
+
+
+    .cart-btn:hover {
+        filter: brightness(120%) contrast(110%);
+    }
+
+
+
+}
