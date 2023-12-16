@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #141414;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav {
+  background-color: lightskyblue;
+  margin: 0 10px;
+}
+
+button {
+  border: none;
+  background: pink;
+  color: #000;
+  outline: none;
+  padding: 10px 15px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+@media (hover: hover) {
+  button {
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .active {
+    background: orange !important;
+  }
+  button:hover {
+    filter: brightness(1.4);
+  }
+}
