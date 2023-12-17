@@ -7,6 +7,8 @@ let currentPage = 1;
 let pageIndex = 5 * pageCount;
 let lastPage = 16;
 
+let newStr = "new";
+
 function populateArr() {
   main.innerHTML = Array(16)
     .fill(6)
