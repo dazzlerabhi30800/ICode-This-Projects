@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
+
+:root {
+  --background-color: #5b6979;
+  --light-green: #ffffff;
+  --light-green-2: #24f923;
+  --font-Figtree: "Figtree", sans-serif;
+  --heading-color: #1f1f1f;
+  --desc-color: #2b2c2b;
+  --button-color: #2ba0f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Figtree);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 100%, 700px);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+
+.greetings {
+  flex-direction: column;
+  gap: 1.8rem;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--heading-color);
+}
+
+p {
+  color: var(--desc-color);
+  font-size: 0.9rem;
+}
+
+.santa--img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle, var(--light-green), var(--light-green-2));
+  align-items: center;
+}
+
+.santa--img img {
+  width: 80%;
+  height: inherit;
+  transform: scaleY(1.02);
+  object-fit: fill;
+}
+
+.feedback {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.feedback--btn {
+  padding: 8px 14px;
+  white-space: nowrap;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: var(--button-color);
+  font-size: 0.9rem;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+/* Confetti Styling */
+.confetti {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+  object-fit: contain;
+}
+.pink {
+  bottom: -20px;
+  left: 50%;
+}
+
+.green {
+  top: 20%;
+  left: -10px;
+  transform: rotate(90deg);
+}
+
+.orange {
+  top: 10%;
+  right: 5%;
+  transform: rotate(45deg);
+}
+
+@media (hover: hover) {
+  .feedback--btn {
+    cursor: pointer;
+  }
+
+  .feedback--btn:hover {
+    filter: brightness(1.4);
+  }
+}
+
