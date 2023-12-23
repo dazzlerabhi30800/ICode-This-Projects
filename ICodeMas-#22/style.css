@@ -17,6 +17,7 @@
   font-family: var(--font-Figtree);
 }
 
+
 body {
   display: flex;
   align-items: center;
@@ -103,6 +104,7 @@ p {
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
   object-fit: contain;
 }
+
 .pink {
   bottom: -20px;
   left: 50%;
@@ -129,4 +131,3 @@ p {
     filter: brightness(1.4);
   }
 }
-

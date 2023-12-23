@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>ICodeMas #23</title>
+</head>
+
+<body>
+  <main>
+    <div class="main--container">
+      <h1>Subscribe to your newsletter</h1>
+      <p>
+        Stay in the loop with latest festive trends and exclusive offers by
+        subscribing to our newsletter.
+      </p>
+      <form>
+        <input type="email" id="email" />
+        <button class="btn">Subscribe</button>
+      </form>
+
+    </div>
+  </main>
+</body>
+<script>
+  const form = document.querySelector('form');
+  form.onsubmit = (e) => {
+    e.preventDefault();
+  }
+</script>
+
+</html>

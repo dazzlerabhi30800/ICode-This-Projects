@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background-color: #fcd6cf;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  align-items: center;
+}
+
+main {
+  width: clamp(300px, 90%, 1300px);
+  background: url('https://github.com/dazzlerabhi30800/assets-for-coding/blob/main/ICodeThis/ICodeMas%20%2323/santa-clause.png?raw=true') no-repeat;
+  background-position: center;
+  height: 500px;
+  box-shadow: 0px 0px 10px 5px #00000054;
+  background-size: cover;
+}
+
+
+.main--container {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #220101a5;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 1.8vw + 5px, 2.5rem);
+}
+
+p,
+.btn,
+input[type="email"] {
+  font-size: clamp(0.9rem, 1vw + 5px, 1.1rem);
+}
+
+
+form {
+  --padding-content: 5px 8px;
+  display: flex;
+  background: #fff;
+  border-radius: 30px;
+  padding: 2px;
+}
+
+#email {
+  background: none;
+  outline: none;
+  border: none;
+  padding: var(--padding-content);
+  transition: 0.3s linear;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#email:invalid {
+  color: red;
+}
+
+.btn {
+  --btn-background: var(--btn, #2f90eb);
+  border: none;
+  outline: none;
+  background: var(--btn-background);
+  color: #fff;
+  border-radius: 25px;
+  padding: var(--padding-content);
+  transition: 0.3s linear;
+}
+
+
+.btn:hover {
+  --btn: #2fd5eb;
+}
