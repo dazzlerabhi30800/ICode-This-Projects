@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --background-color: #5b6979;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--background-color);
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 80%;
+  padding: 1rem;
+  background: #e4e4e4;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 4px #00000052;
+  gap: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info--wrapper,
+.button--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cookie-img {
+  background: rgb(215, 111, 73);
+  display: flex;
+  padding: 5px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-img img {
+  width: fit-content;
+  height: 2rem;
+}
+
+.btn {
+  --btn-background: #ffffff;
+  --btn-color: #000;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 30px;
+  background: var(--btn-background);
+  box-shadow: 1px 1px 14px 3px #0000001a;
+  margin: 0 5px;
+  color: var(--btn-color);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.info--wrapper p,
+.btn {
+  font-size: clamp(0.75rem, 1.3vw + 3px, 0.9rem);
+}
+
+.okay {
+  --btn-background: #4383e9;
+  --btn-color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  display: flex;
+}
+
