@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --background-color: #feeceb;
+  --red-color: #a20b62;
+  --light-gray: #d5d2d2;
+  --very-light-gray: #f1f0f0;
+  --dark-gray: #2d2c2c;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+p,
+label,
+input,
+.profile--info {
+  font-size: clamp(0.78rem, 1.3vw, 0.93rem);
+}
+p {
+  font-weight: 500;
+}
+
+main {
+  width: clamp(300px, 90%, 470px);
+  background: #fff;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+.profile--wrapper {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile--info {
+  background: var(--very-light-gray);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--dark-gray);
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 8px;
+  background: var(--dark-gray);
+  border-radius: 50%;
+}
+
+.profile--img {
+  --dimension: 100px;
+  width: var(--dimension);
+  height: var(--dimension);
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.username--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#username {
+  border-radius: 5px;
+  outline: none;
+  padding: 12px 16px;
+  border: 1px solid var(--light-gray);
+}
+#username:focus {
+  outline: none;
+}
+#username::placeholder {
+  color: var(--dark-gray);
+}
+
+.check--wrapper {
+  display: flex;
+  gap: 8px;
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+}
+#checkbox:checked {
+  border: none;
+  accent-color: var(--red-color);
+}
+button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background: var(--red-color);
+  color: #fff;
+  border-radius: 5px;
+}
+.underline {
+  text-decoration: underline;
+  color: var(--red-color);
+}
+
+small {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  color: var(--red-color);
+}
+
+@media (hover: hover) {
+  button {
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+  button:hover {
+    filter: brightness(1.3);
+  }
+}
