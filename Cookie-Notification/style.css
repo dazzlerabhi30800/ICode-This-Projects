@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --background: #ecedf6;
+  --blue: #6f88dd;
+  --dark-blue: #1a4beb;
+  --cookie-background: #fadcca;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  color: #000;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 8rem;
+  align-items: center;
+  width: 90%;
+}
+
+.notification {
+  background: var(--blue);
+  width: clamp(300px, 85%, 900px);
+  border-radius: 60px;
+  padding: 2.5rem;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 0.75rem 1.3rem;
+}
+.remove1 {
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  color: #fff;
+}
+.remove2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.9rem;
+  background: none;
+  color: #000;
+  border: 1px solid #cccccc;
+}
+
+h1 {
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-weight: 400;
+}
+h1 span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.cookie {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: clamp(300px, 90%, 380px);
+  gap: 2rem;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cookie--img {
+  width: 80px;
+  height: 80px;
+  background: var(--cookie-background);
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.desc {
+  text-align: center;
+  font-size: clamp(0.7rem, 1vw + 5px, 0.85rem);
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 8px 0;
+}
+.btn2 {
+  outline: none;
+  background: none;
+  border: 1px solid var(--blue);
+  border-radius: 30px;
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+a {
+  color: #000;
+}
+
+@media (hover: hover) {
+  button,
+  .desc span {
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+  button:hover,
+  .desc span:hover,
+  a:hover {
+    opacity: 0.8;
+  }
+}
