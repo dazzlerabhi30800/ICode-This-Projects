@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --background: #d6ebe8;
+  --dark-teal: #c3e0d8;
+  --orange: #ffa593;
+  --padding: 1rem;
+  --card-padding: 2rem;
+  --card-gap: 2rem;
+  --card-inner-gap: 1.2rem;
+  --light-teal: #ddebe7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  padding: var(--padding);
+  background: var(--background);
+  gap: var(--card-gap);
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  flex-direction: column;
+  gap: var(--card-inner-gap);
+  justify-content: center;
+  padding: var(--card-padding);
+}
+.deadline {
+  background: var(--dark-teal);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.link li {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 7px;
+}
+
+.features {
+  gap: 1rem;
+}
+.features li {
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.82rem, 1vw + 2px , 0.9rem);
+  gap: 8px;
+}
+.features li i {
+  font-size: 1rem;
+}
+
+
+.apply--btn {
+  padding: 15px 1rem;
+  background: var(--orange);
+  border-radius: 5px;
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.12);
+  font-size: clamp(0.9rem, 1.1vw + 2px, 1rem);
+  margin: 4rem 0 0;
+  text-align: center;
+}
+
+
+.choose {
+  background: var(--light-teal);
+  border: 1px solid #fff;
+}
+
+@media(hover:hover) {
+  .link li, .apply--btn{
+    cursor: pointer;
+    transition: 0.23s linear;
+  }
+  .link li:hover {
+    background: var(--dark-teal);
+  }
+  .apply--btn:hover {
+    background: orange;
+  }
+}
+
+
+@media Screen and (width > 750px) {
+  main {
+    --padding: 3rem;
+    --card-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr); 
+    align-items: center;
+  }
+  .card {
+    box-shadow: none;
+    justify-content: start;
+  }
+  .choose {
+    grid-row: span 2;
+    height: 70%;
+  }
+  .deadline {
+    height: fit-content;
+    width: 100%;
+  }
+  .apply--btn {
+    margin-top: auto;
+  }
+}
