@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background: #e3e1ef;
+  --dark: #2c2761;
+  --transparent: #d8dae7;
+  --text-color: #1b1b1b;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+}
+
+main {
+  width: clamp(320px, 80%, 370px);
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.circular--progress {
+  margin: 1rem auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--dark) 5%,
+    var(--dark) 25%,
+    var(--transparent) 25%
+  );
+  padding: 12px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.25);
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.inner h1 {
+  font-size: clamp(1.8rem, 1.8vw, 2.2rem);
+}
+
+.inner span {
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  color: var(--text-color);
+}
+
+h2 {
+  margin: 10px 1.2rem 0;
+}
+
+.curriculum--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.curriculum {
+  border: 2px solid var(--transparent);
+  padding: 16px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.active {
+  border-color: var(--dark);
+}
+
+.curriculum input[type="checkbox"] {
+  appearance: none;
+}
+
+.label--checkbox {
+  margin-top: 2px;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid var(--transparent);
+}
+
+.label--checkbox i {
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+input[type="checkbox"]:checked + label {
+  background: var(--dark);
+}
+
+input[type="checkbox"]:checked + label i {
+  opacity: 1;
+}
+
+h3 {
+  font-size: clamp(0.9rem, 1.5vw + 5px, 1rem);
+}
+
+.info p {
+  font-size: clamp(0.7rem, 1vw + 5px, 0.8rem);
+  margin-top: 5px;
+}
