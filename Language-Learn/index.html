@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Language Learn</title>
+    <link rel="stylesheet" href="./style.css" media="all">
+  </head>
+  <body>
+    <main>
+      <!-- Tier Card -->
+      <div class="card">
+        <h1>Select a Tier</h1>
+        <div class="tier--wrapper">
+          <div class="tier">
+            <p class="tier--price">$5/month</p>
+            <button class="btn select">Select</button>
+            <small> A Significant contribution </small>
+          </div>
+          <div class="tier">
+            <p class="tier--price">$30/month</p>
+            <button class="btn select">Select</button>
+            <small> A huge contribution </small>
+          </div>
+        </div>
+      </div>
+      <!-- Eat Card -->
+      <div class="card eat">
+        <div class="first--section">
+          <div class="progress"></div>
+          <h2>Which of these is "You eat pasta"?</h2>
+          <div class="questions--wrapper">
+            <div class="question">
+              <input id="question1" type="checkbox" name="question1" />
+              <label for="question1" class="checkbox"></label>
+              <label for="question1">El caballo es pequeno</label>
+            </div>
+            <div class="question">
+              <input id="question2" type="checkbox" name="question2" />
+              <label for="question2" class="checkbox"></label>
+              <label for="question2">Tu comes pasta</label>
+            </div>
+            <div class="question">
+              <input id="question3" type="checkbox" name="question3" />
+              <label for="question3" class="checkbox"></label>
+              <label for="question3">El come pan</label>
+            </div>
+          </div>
+        </div>
+        <button class="btn skip">Skip this question</button>
+        <button class="btn submit">Submit</button>
+      </div>
+      <!-- Nature Card -->
+      <div class="card nature">
+        <div class="nature--progress">
+          <div class="nature--img">
+            <img
+              src="https://www.freeiconspng.com/uploads/nature-icon-png-22.png"
+              alt="nature"
+            />
+          </div>
+        </div>
+        <h3>Nature</h3>
+        <button class="btn continue">Continue</button>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
