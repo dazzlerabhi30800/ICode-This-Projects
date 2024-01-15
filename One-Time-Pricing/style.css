@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background: #f4f7ff;
+  --light-blue: #e9ecff;
+  --green: #61f593;
+  --blue: #75f5e7;
+  --dark-blue: #2d2e54;
+  --light-purple: #9fc1fe;
+  --pink: #afacff;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: clamp(300px, 80%, 390px);
+  padding: 2rem;
+  background: #fff;
+  border-radius: 13px;
+  color: var(--dark-blue);
+  box-shadow: 0 10px 30px 2px rgba(0, 0, 0, 0.15);
+}
+
+main::after {
+  position: absolute;
+  content: "";
+  inset: -35px -35px 20px;
+  background: var(--light-blue);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-size: clamp(1.6rem, 1.8vw + 5px, 2.2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subText {
+  font-size: clamp(0.7rem, 1vw + 5px, 0.85rem);
+  font-weight: 400;
+}
+
+.btn {
+  padding: 14px 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, var(--green), var(--blue));
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pick {
+  background: linear-gradient(to right, var(--light-purple), var(--pink));
+  margin: 1rem 0 8px;
+}
+
+.info--text {
+  font-size: clamp(0.65rem, 1vw, 0.78rem);
+  font-weight: 700;
+}
+
+.infoSubText {
+  font-weight: 400;
+}
+
+.shipping--features {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feature > span {
+  background: var(--light-blue);
+  padding: 7px 9px;
+  font-size: 0.65rem;
+  border-radius: 50%;
+}
+
+.feature--desc {
+  font-size: clamp(0.6rem, 1vw, 0.74rem);
+  font-weight: 500;
+}
+
+.featureSubText {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 14px 12px;
+  border-radius: 5px;
+  background: var(--light-blue);
+}
+
+small {
+  font-weight: 700;
+  color: #000;
+  font-size: clamp(0.7rem, 0.9vw, 0.88rem);
+}
+
+.input--container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+input {
+  padding: 8px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  flex: 1;
+}
+
+input::placeholder {
+  color: var(--dark-blue);
+}
+
+.check--btn {
+  padding: 8px 14px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+input,
+.check--btn {
+  font-size: clamp(0.6rem, 1vw + 2px, 0.72rem);
+}
+
+@media (hover: hover) {
+  button {
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+
+  button:hover {
+    filter: brightness(0.8) contrast(0.8);
+  }
+}
