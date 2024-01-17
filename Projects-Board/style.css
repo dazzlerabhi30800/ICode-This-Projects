@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --light-text: #848484;
+    --aside-navbar-background: #252531;
+    --shadow-blue: #b3daff;
+    --shadow-orange: #fec8b8;
+    --shadow-yellow: #ffdca8;
+    --shadow-pink: #d7a7ff;
+    --card-blue: #57aefe;
+    --card-orange: #fe8157;
+    --card-yellow: #ffb658;
+    --card-purple: #b158ff;
+}
+
+.links {
+    font-weight: 400;
+}
+
+ul,
+.btn,
+.profile {
+    font-size: clamp(0.8rem, 1vw, 0.87rem);
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    background: var(--aside-navbar-background);
+    align-items: stretch;
+    flex-grow: 0;
+}
+
+.project--icon {
+    --shadow-color: var(--shadow-blue);
+    box-shadow: 0 10px 15px 3px var(--shadow-color);
+    padding: 1.5rem 1rem;
+}
+
+.one {
+    background: var(--card-blue);
+}
+
+.two {
+    --shadow-color: var(--shadow-orange);
+    background: var(--card-orange);
+}
+
+.three {
+    --shadow-color: var(--shadow-yellow);
+    background: var(--card-yellow);
+}
+
+.four {
+    --shadow-color: var(--shadow-pink);
+    background: var(--card-purple);
+}
+
+.add {
+    box-shadow: none;
+}
+
+.project {
+    height: 100%;
+}
+
+@media (hover: hover) {
+    li {
+        cursor: pointer;
+        transition: 0.3s linear;
+    }
+
+    li:not(aside ul li):hover {
+        color: #000;
+    }
+}
