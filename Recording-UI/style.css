@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-white: #dbeff1;
+  --bg-blue: #bbe8eb;
+}
+
+body {
+  background: radial-gradient(circle, var(--bg-blue), var(--bg-white) 90%);
+}
+
+main {
+  width: clamp(300px, 90%, 480px);
+  height: 400px;
+}
+
+button {
+  transition: 0.3s linear;
+}
+
+button:hover {
+  filter: brightness(1.2) contrast(0.8);
+  opacity: 0.8;
+}
