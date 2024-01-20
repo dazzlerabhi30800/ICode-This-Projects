@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Pricing 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="min-h-screen flex justify-center items-center">
+    <main class="flex flex-wrap justify-center gap-10 md:gap-20 py-8 px-3">
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col shadow-lg pt-4 pb-14 px-10 rounded-lg bg-white text-gray-800"
+      >
+        <h1 class="text-xl md:text-2xl font-bold my-1 text-purple-500">
+          Starter
+        </h1>
+        <p class="text-sm md:text-lg">Free</p>
+        <ul class="flex flex-col mt-14 mb-10 gap-6 font-medium text-gray-700">
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            Unlimited files
+          </li>
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            Unlimited editors
+          </li>
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            Unlimited cloud storage
+          </li>
+        </ul>
+        <button
+          class="my-4 p-3 border border-indigo-500 text-indigo-500 rounded-md md:cursor-pointer transition ease-in-out duration-300 hover:border-transparent hover:bg-indigo-500 hover:text-white"
+        >
+          Choose Starter
+        </button>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col shadow-lg pt-4 pb-14 px-10 rounded-lg bg-white text-gray-800"
+      >
+        <h1 class="text-xl md:text-2xl font-bold my-1 text-rose-500">
+          Professional
+        </h1>
+        <p class="text-sm md:text-lg">
+          <span class="font-bold">$12 </span>per member
+        </p>
+        <ul class="flex flex-col mt-14 mb-10 gap-6 font-medium text-gray-700">
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            Unlimited projects
+          </li>
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            private projects
+          </li>
+          <li class="flex items-center gap-4 text-sm md:text-md">
+            <i class="fas fa-check text-lime-600 text-base"></i>
+            Team libraries
+          </li>
+        </ul>
+        <button
+          class="my-4 p-3 border border-transparent bg-rose-500 text-white rounded-md md:cursor-pointer transition ease-in-out duration-300 hover:border-rose-500 hover:bg-transparent hover:text-rose-500"
+        >
+          Choose Professional
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
