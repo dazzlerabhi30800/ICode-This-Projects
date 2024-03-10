@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.benefit {
+  --accent-color: orange;
+  position: absolute;
+  border-bottom: 2px solid var(--accent-color);
+  background: rgba(255, 166, 0, 0.181);
+  padding: 8px 16px;
+  border-radius: 10px 10px 0 0;
+  color: #282828;
+  top: 20%;
+  left: 38%;
+}
+.benefit::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 220px;
+  top: 42%;
+  transform: translateX(20px);
+  border-top: 2px dashed var(--accent-color);
+  border-right: 2px dashed rgba(255, 166, 0, 0.653);
+  border-radius: 0 180px 0 0;
+}
+
+.memory {
+  --accent-color: rgb(142, 61, 61);
+  background: rgba(144, 33, 33, 0.104);
+  top: 60%;
+  left: 30%;
+}
+.memory::after {
+  width: 80px;
+  height: 150px;
+  rotate: 90deg;
+  transform: translate(-110px, -60px);
+  border-top-color: rgba(165, 42, 42, 0.417);
+  border-right-color: rgb(165, 42, 42);
+  border-radius: 10px 140px 0 0px;
+}
+
+.collaboration {
+  --accent-color: rgb(58, 240, 113);
+  background: rgba(33, 144, 89, 0.104);
+  top: 20%;
+  left: initial;
+  right: 32%;
+  width: fit-content;
+}
+.collaboration::after {
+  width: 0;
+  height: 0;
+}
+.collaboration::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 220px;
+  transform: translate(-150px, 10px);
+  border-top: 2px dashed var(--accent-color);
+  border-left: 2px dashed rgba(127, 238, 123, 0.734);
+  border-radius: 150px 0 0 0;
+}
+
+
+.focus--wrapper {
+    position: relative;
+    transform: translate(150px, 50px);
+}
+.focus {
+    --accent-color: rgb(11, 179, 225);
+    background: rgba(61, 160, 235, 0.19);
+}
+.focus::after {
+    width: 0;
+    height: 0;
+}
+.focus::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    right: 50%;
+    transform: translate(-40px, -20px) rotateX(180deg);
+    border-top: 2px dashed rgba(46, 186, 242, 0.583);
+    border-left: 2px dashed var(--accent-color);
+    border-radius: 250px 40px 0 0 !important;
+}
+.sub-focus {
+    display: flex;
+    position: absolute;
+    gap: 6rem;
+    min-width: 230px;
+    flex-direction: column;
+    transform: translate(230px, -80px);
+}
+.sub-focus > * {
+    white-space: no-wrap;
+}
+
+.sub {
+    padding: 10px 18px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: fit-content;
+    border-bottom: 1px solid rgb(12, 110, 238);
+    position: relative;
+}
+.sub::before {
+    position: absolute;
+    content: '';
+    border-top: 2px dashed rgb(29, 117, 189);
+    border-left: 2px dashed rgba(23, 155, 237, 0.482);
+    width: 180px;
+    height: 50px;
+    top: 50%;
+    left: 0;
+    transform: translateX(-175px);
+    border-radius: 130px 0 0 0;
+}
+.two::before {
+    transform: translateX(-175px) rotateX(180deg);
+    top: -40%;
+}
+
+
+.three::before {
+    transform: translate(-180px, -180px) rotateX(180deg);
+    height: 180px;
+}
