@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Movie Card</title>
+  </head>
+  <body
+    class="min-h-screen flex justify-center items-center bg-slate-100 font-[Poppins]"
+  >
+    <main
+      class="mx-auto w-[95%] max-w-[950px] bg-white shadow-lg rounded-lg p-6 my-4 md:my-0"
+    >
+      <!-- Header -->
+      <header class="flex justify-between items-center">
+        <div class="flex flex-col">
+          <h1 class="text-gray-800 text-2xl md:text-3xl font-semibold">
+            Star Wars: The Last Jedi
+          </h1>
+          <p class="text-sky-600 font-medium">Action & Adventure</p>
+        </div>
+        <p class="font-bold text-sky-600">
+          7.4<span class="font-normal text-gray-500 ml-1"> / 10</span>
+        </p>
+      </header>
+      <!-- Second Wrapper -->
+      <div class="flex flex-col md:flex-row p-3 md:p-0 md:my-8 gap-6 md:gap-10">
+        <!-- Image Wrapper -->
+        <div class="flex flex-col gap-4">
+          <img
+            src="https://wallpapers.com/images/high/the-last-jedi-star-wars-fipnb2vt2x8ujc7l.webp"
+            alt="Star Wars"
+            class="w-full md:w-[800px] rounded-md object-cover"
+          />
+          <div class="flex justify-between items-center">
+            <p>$19.00</p>
+            <button
+              class="py-[3px] font-semibold text-sm px-4 rounded-2xl border border-black hover:text-gray-700"
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <!-- About Wrapper -->
+        <div class="flex flex-col md:p-3 gap-2">
+          <h2 class="font-bold text-lg">About the Movie</h2>
+          <p class="text-xs md:text-[15px] leading-[1.4] font-medium">
+            In Lucasfilm's Star Wars: The Last Jedi, the Skywalker saga
+            continues as the heroes of The Force Awakens join the galactic
+            legends in an epic adventure that unlocks new mysteries of the Force
+            and shocking revelations of the past.
+          </p>
+          <div class="movie--info"></div>
+          <a
+            href="javascript:;"
+            class="text-sky-700 hover:underline text-sm mt-4"
+            >More</a
+          >
+          <button
+            class="w-fit flex items-center gap-2 self-end py-[10px] px-4 bg-black text-white text-sm rounded-3xl ease-in-out duration-300 transition hover:bg-gray-700"
+          >
+            Watch Trailer
+            <i
+              class="rounded-[50%] py-[6px] pl-[11px] pr-[9px] text-xs bg-white text-black fas fa-play"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

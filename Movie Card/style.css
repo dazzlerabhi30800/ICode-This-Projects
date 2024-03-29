@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --grid-column: repeat(2, 1fr) 140px;
+  --grid-rows: 50px 1fr;
+}
+
+.movie--info {
+  display: grid;
+  grid-template-columns: var(--grid-column);
+  grid-template-rows: var(--grid-rows);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.movie--container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.movie--container h3 {
+  font-weight: 700;
+}
+
+.movie--container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: #149eed;
+}
+
+@media Screen and (width <= 600px) {
+  :root {
+    --grid-column: repeat(2, 1fr);
+    --grid-rows: repeat(2, 1fr);
+  }
+}
+
+  .actor {
+    grid-row: span 2;
+  }
+  .producer {
+    grid-column-start: 2;
+  }
