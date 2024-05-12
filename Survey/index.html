@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <main>
+      <!-- * Heading -->
+      <h1>What do you think?</h1>
+      <!-- * Checkbox wrapper -->
+      <div class="checkbox--wrapper">
+        <div class="wrapper">
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox1">This is useful</label>
+        </div>
+        <div class="wrapper">
+          <input type="checkbox" id="checkbox2" />
+          <label for="checkbox2">Something is wrong</label>
+        </div>
+        <div class="wrapper">
+          <input type="checkbox" id="checkbox3" />
+          <label for="checkbox3">This is not relevant</label>
+        </div>
+        <div class="wrapper">
+          <input type="checkbox" id="checkbox4" />
+          <label for="checkbox4">This is not useful</label>
+        </div>
+      </div>
+
+      <!-- * Input Suggestion-->
+      <div class="suggestion">
+        <h2>Do you have any comments or suggestions?</h2>
+        <textarea
+          name="suggestion--textbox"
+          placeholder="Share your suggestion"
+          aria-setsize="not"
+          rows="1"
+        ></textarea>
+        <!-- * small text-->
+        <small
+          >This data you provide helps us improve our platform.
+          <a href="javascript:;">Find out more</a> if it is a legal case, you
+          must
+          <a href="javascript:;">submit a legal removal request</a>
+        </small>
+      </div>
+
+      <div class="button--container">
+        <button class="btn cancel">Cancel</button>
+        <button class="btn submit">Submit</button>
+      </div>
+    </main>
+  </body>
+</html>
